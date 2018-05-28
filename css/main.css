@@ -1,0 +1,84 @@
+body{
+    background-color:#6ac5ac;
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.main{
+    display : flex;
+    flex-flow: row wrap;
+}
+.container{
+    display : grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px 30px;
+    margin : 0 5%;
+    
+    
+}
+.item {
+ text-align : center;
+ height : 100%;
+ width: 100%;
+ background-color: white;
+ border-radius : 8px;
+ box-shadow:1px 1px 1px;
+}
+.skill-name{
+    margin: 10px;
+    align : center;
+    font-size: 120%;
+}
+.item:hover{
+    box-shadow : 5px 5px 5px;
+ 
+}
+.skill-img{
+  width: 6em;
+  height: 6em;
+  padding-top:10px;
+  margin: 0 auto;
+  
+}
+
+.logo{
+    max-width: 6em;
+    max-height: 6em;
+}
+.skill-description{
+    padding:2px 10px;
+    text-align:center;
+    line-height: 150%
+}
+
+@media only screen and(max-width:1200px){
+    .container
+    {
+        grid-template-columns: auto auto auto auto;
+    }
+    }
+@media only screen and(max-width:992px){
+.container
+{
+    grid-template-columns: auto auto auto;
+}
+}
+
+@media only screen and(max-width:728px){
+    .container
+    {
+        grid-template-columns: auto auto auto;
+    }
+    }
+@media only screen and (max-width : 576px){
+.container
+{
+    grid-template-columns: auto ;
+}
+.skill-description
+{
+    display:none;
+}
+}
